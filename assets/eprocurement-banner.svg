@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="350">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="30%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#6366f1" flood-opacity="0.35" />
+    </filter>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .tag-pill {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(3deg); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(10px) rotate(-3deg); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -100; }
+      }
+      .animated-circle-1 {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .animated-circle-2 {
+        animation: pulseGlow 8s ease-in-out infinite 1s;
+        transform-origin: 1050px 250px;
+      }
+      .animated-float-card {
+        animation: floatSlow 5s ease-in-out infinite;
+      }
+      .animated-float-card2 {
+        animation: floatReverse 6s ease-in-out infinite 0.5s;
+      }
+      .grid-line {
+        stroke: #334155;
+        stroke-opacity: 0.25;
+        stroke-width: 1;
+      }
+      .flow-path {
+        stroke: url(#primary-glow);
+        stroke-width: 2.5;
+        fill: none;
+        stroke-dasharray: 8 6;
+        animation: dashMove 4s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="350" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Background Grid -->
+  <g class="grid-line">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="200" y1="0" x2="200" y2="350" />
+    <line x1="400" y1="0" x2="400" y2="350" />
+    <line x1="600" y1="0" x2="600" y2="350" />
+    <line x1="800" y1="0" x2="800" y2="350" />
+    <line x1="1000" y1="0" x2="1000" y2="350" />
+  </g>
+
+  <!-- Glowing background orbs -->
+  <circle cx="200" cy="100" r="140" fill="#6366f1" filter="url(#glow)" class="animated-circle-1" />
+  <circle cx="1050" cy="250" r="160" fill="#a855f7" filter="url(#glow)" class="animated-circle-2" />
+
+  <!-- Flowing Connection Line -->
+  <path d="M 120 280 C 350 330, 480 210, 680 260 S 980 180, 1100 120" class="flow-path" />
+
+  <!-- Decorative Tech Nodes -->
+  <g class="animated-float-card">
+    <rect x="940" y="55" width="200" height="75" rx="12" fill="#1e293b" fill-opacity="0.85" stroke="#475569" stroke-width="1" filter="url(#shadow)" />
+    <circle cx="970" cy="92" r="16" fill="#10b981" fill-opacity="0.2" />
+    <circle cx="970" cy="92" r="8" fill="#10b981" />
+    <text x="1000" y="86" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="14">Source-to-Pay</text>
+    <text x="1000" y="106" fill="#94a3b8" font-family="sans-serif" font-size="12">Automated S2P Flow</text>
+  </g>
+
+  <g class="animated-float-card2">
+    <rect x="910" y="195" width="230" height="75" rx="12" fill="#1e293b" fill-opacity="0.85" stroke="#475569" stroke-width="1" filter="url(#shadow)" />
+    <circle cx="940" cy="232" r="16" fill="#06b6d4" fill-opacity="0.2" />
+    <circle cx="940" cy="232" r="8" fill="#06b6d4" />
+    <text x="970" y="226" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="14">Procure-to-Pay (P2P)</text>
+    <text x="970" y="246" fill="#94a3b8" font-family="sans-serif" font-size="12">Intake • PO • Invoicing</text>
+  </g>
+
+  <!-- Left Side Badge & Category Indicator -->
+  <g transform="translate(60, 50)">
+    <rect width="170" height="32" rx="16" fill="url(#primary-glow)" fill-opacity="0.2" stroke="url(#primary-glow)" stroke-width="1.5" />
+    <text x="85" y="21" text-anchor="middle" fill="#ec4899" font-family="sans-serif" font-weight="700" font-size="12" letter-spacing="1">CURATED ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Titles -->
+  <g transform="translate(60, 130)">
+    <text x="0" y="0" class="title-text">
+      Awesome <tspan fill="url(#primary-glow)">eProcurement</tspan>
+    </text>
+    <text x="0" y="38" class="subtitle-text">
+      Top Source-to-Pay, Procure-to-Pay, Spend Control &amp; Purchasing Platforms
+    </text>
+  </g>
+
+  <!-- Feature Pills / Badges -->
+  <g transform="translate(60, 235)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="140" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="70" y="24" text-anchor="middle" class="tag-pill">🚀 SaaS Suites</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(150, 0)">
+      <rect width="155" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="77.5" y="24" text-anchor="middle" class="tag-pill">⚡ Open Source</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(315, 0)">
+      <rect width="145" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="72.5" y="24" text-anchor="middle" class="tag-pill">📊 Spend Control</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(470, 0)">
+      <rect width="165" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="82.5" y="24" text-anchor="middle" class="tag-pill">🤝 Supplier Mgmt</text>
+    </g>
+    <!-- Pill 5 -->
+    <g transform="translate(645, 0)">
+      <rect width="130" height="38" rx="19" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="65" y="24" text-anchor="middle" class="tag-pill">💰 Pricing &amp; AP</text>
+    </g>
+  </g>
+</svg>
