@@ -19,29 +19,20 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
-## SaaS/Hosted Platforms
-- **[Coupa](https://www.coupa.com/)**  
-  Leading business spend management platform covering procurement, invoicing, expenses, and supplier collaboration with a large supplier network and strong analytics.
-- **[SAP Ariba](https://www.sap.com/products/spend-management/ariba.html)**  
-  Enterprise source-to-pay suite deeply integrated with the SAP ecosystem, offering sourcing, contracts, procurement, and one of the largest supplier networks.
-- **[Procurify](https://www.procurify.com/)**  
-  Modern procurement platform focused on spend visibility, approvals, and purchase order management for mid-market organizations.
-- **[Zip](https://ziphq.com/)**  
-  Intake-to-procure platform that acts as a front door for employee requests, routing them through governed workflows into existing procurement and ERP systems.
-- **[Precoro](https://precoro.com/)**  
-  Cloud procurement software for purchase orders, approvals, inventory, and spend control, popular with growing companies.
-- **[Tradogram](https://www.tradogram.com/)**  
-  Procurement and purchasing management platform offering requisitions, POs, supplier portals, and reporting.
-- **[Proactis](https://www.proactis.com/)**  
-  Spend management and eProcurement solution used by public sector and commercial organizations.
-- **[Basware](https://www.basware.com/)**  
-  Strong in procure-to-pay and e-invoicing, with global compliance capabilities and AP automation.
-- **[Oracle Procurement Cloud](https://www.oracle.com/erp/procurement/)**  
-  Part of Oracle Fusion Cloud ERP, delivering source-to-settle processes tightly integrated with finance and supply chain.
-- **[Jaggaer ONE](https://www.jaggaer.com/)**  
-  Comprehensive source-to-pay platform with strengths in direct materials, complex sourcing, and enterprise procurement.
-- **Additional enterprise players** (Ivalua, GEP SMART, etc.)  
-  Frequently evaluated alongside the platforms above for full source-to-pay or specialized procurement needs.
+| Platform | Description | Pricing (Starting Tier / Est.) | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Coupa](https://www.coupa.com/)** | Leading business spend management platform covering procurement, invoicing, expenses, and supplier collaboration with a large supplier network and strong analytics. | Enterprise custom quote (starts at ~$2,500/month / ~$30,000/year for core packages based on spend volume and modules) | No free tier or trial for core BSM platform (demo only); 30-day free trial available for Coupa Advanced Supplier Portal. |
+| **[SAP Ariba](https://www.sap.com/products/spend-management/ariba.html)** | Enterprise source-to-pay suite deeply integrated with the SAP ecosystem, offering sourcing, contracts, procurement, and one of the largest supplier networks. | Enterprise custom quote (starts at ~$80,000–$150,000/year for baseline deployments plus spend/document volume fees) | No free tier or trial for buyers (guided demo only); free standard account available for suppliers responding to RFQs/POs on Ariba Network. |
+| **[Procurify](https://www.procurify.com/)** | Modern procurement platform focused on spend visibility, approvals, and purchase order management for mid-market organizations. | Custom quote based on Pro licenses and modules (starts at ~$1,000/month / ~$12,000–$15,000/year billed annually; requester/Basic users included) | No free trial; interactive on-demand product tours and personalized live demo available. |
+| **[Zip](https://ziphq.com/)** | Intake-to-procure platform that acts as a front door for employee requests, routing them through governed workflows into existing procurement and ERP systems. | Enterprise custom quote (starts at ~$40,000/year for intake workflows, scaling with user count, modules, and ERP connectors) | No free trial; custom sandbox demo upon sales qualification. |
+| **[Precoro](https://precoro.com/)** | Cloud procurement software for purchase orders, approvals, inventory, and spend control, popular with growing companies. | **Core Plan**: Starts at $499/month (billed annually, includes core PO, PR, and approvals); **Automation Plan**: Starts at $999/month | 14-day free trial (full access to core features, no credit card required). |
+| **[Tradogram](https://www.tradogram.com/)** | Procurement and purchasing management platform offering requisitions, POs, supplier portals, and reporting. | **Premium Plan**: Starts at $15/user/month (or custom quote for 20+ seats) | **Free Forever Plan**: 1 user, up to 10 transaction documents/month (POs/requisitions), basic dashboard, unlimited supplier/item records. |
+| **[Proactis](https://www.proactis.com/)** | Spend management and eProcurement solution used by public sector and commercial organizations. | Enterprise custom quote (annual subscription tailored to transaction volume, deployment scope, and modules) | No free trial; vendor-guided demo only. |
+| **[Basware](https://www.basware.com/)** | Strong in procure-to-pay and e-invoicing, with global compliance capabilities and AP automation. | Enterprise custom quote (tiered based on annual e-invoice volume, P2P modules, and ERP integrations) | No free trial; interactive demo and business case assessment available. |
+| **[Oracle Procurement Cloud](https://www.oracle.com/erp/procurement/)** | Part of Oracle Fusion Cloud ERP, delivering source-to-settle processes tightly integrated with finance and supply chain. | Starts at ~$400–$650/hosted named user/month for specific cloud modules (or custom enterprise license agreement) | 30-day free trial via Oracle Cloud Free Tier ($300 cloud credits, subject to infrastructure services setup) or guided interactive tour. |
+| **[Jaggaer ONE](https://www.jaggaer.com/)** | Comprehensive source-to-pay platform with strengths in direct materials, complex sourcing, and enterprise procurement. | Enterprise custom quote (modular annual subscription based on direct/indirect spend scope and user seats) | No free trial; customized solution walkthrough/demo available. |
+| **[Ivalua](https://www.ivalua.com/)** | Unified source-to-pay suite handling direct and indirect spend, complex services, and supplier lifecycle management. | Enterprise custom quote (tailored to enterprise scale, contract length, and module selection) | No free trial; tailored product demonstration available. |
+| **[GEP SMART](https://www.gep.com/software)** | AI-driven unified procurement platform covering spend analysis, sourcing, contract management, and procure-to-pay. | Enterprise custom quote (annual contract based on spend under management and user licenses) | No free trial; tailored enterprise demo available (free supplier portal access for registered vendors). |
 
 ## Open-Source GitHub Projects
 - **[ERPNext](https://github.com/frappe/erpnext)** (Buying / Procurement module)  
